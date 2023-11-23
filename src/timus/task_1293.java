@@ -12,7 +12,7 @@ public class task_1293 {
         int A = in.nextInt();
         System.out.print("Введите ширину панели: ");
         int B = in.nextInt();
-        int S = (A * B) * 2;
-        System.out.println("Необходимое количество сульфида тория в нанограммах: " + (N * S));
+        int S = (N * (A * B)) * 2;
+        System.out.println(S);
     }
 }
