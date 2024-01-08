@@ -19,7 +19,13 @@ public class task6 {
     }
 
     public static void main(String[] args) {
+        int[] array= {4,5,2,1,6,3};
+        int k = 7;
+        int[] getNewArray = getArray(array,k);
 
+        for (int i = 0; i < getNewArray.length;i++){
+            System.out.println(getNewArray[i]);
+        }
 
     }
 }
