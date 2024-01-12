@@ -14,23 +14,15 @@ public class task_1313 {
 
             }
         }
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                for (int k = 0; k < matrix.length; k++) {
-                    for (int l = 0; l < matrix[k].length; l++) {
-                        if (matrix[i][j] <= matrix[k][l]) {
-                            tmp = matrix[i][j];
-                            matrix[i][j] = matrix[k][l];
-                            matrix[k][l] = tmp;
-                        }
-                    }
-                }
+        for (int i = 0; i < s; i++) {
+            for (int j = i; j >= 0; j--) {
+                System.out.print(matrix[j][i-j] + " ");
             }
         }
 
-        for (int i = 0; i < matrix.length; i++) {
-           for (int j = 0; j < matrix.length; j++) {
-               System.out.print(matrix[i][j] + " ");
+        for (int i = 1; i < s; i++) {
+           for (int j = s -1; j >= i; j--) {
+               System.out.print(matrix[j][s - j + i -1] + " ");
             }
         }
 
