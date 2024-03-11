@@ -40,9 +40,5 @@ public class task6 {
         System.out.println("Строки, ключ у которых больше 5: " + aboveFive);
         System.out.println("Значения начиная с ключа 0:" + zeroKey.toString());
         System.out.println("Перемноженные ключи: " + aboveFiveX);
-
-
-
-
     }
 }

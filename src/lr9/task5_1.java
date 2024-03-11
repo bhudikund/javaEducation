@@ -1,7 +1,7 @@
 package lr9;
 
 public class task5_1 {
-    static class Node {
+/*    static class Node {
         public int value;
         public Node next;
         Node(int value, Node next){
@@ -26,6 +26,6 @@ public class task5_1 {
             ref= ref.next;
         }
     }
-
+*/
 
 }
