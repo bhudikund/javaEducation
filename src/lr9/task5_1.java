@@ -1,17 +1,16 @@
 package lr9;
 
 public class task5_1 {
-    class Node {
+    static class Node {
         public int value;
         public Node next;
-    Node(int value, Node next){
-        this.value = value;
-        this.next = next;
+        Node(int value, Node next){
+            this.value = value;
+            this.next = next;
+        }
     }
 
-    }
-
-    public void main(String[] args) {
+    public static void main(String[] args) {
         Node node0 = new Node(0, null);
         Node node1 = new Node(1, null);
         Node node2 = new Node(2, null);

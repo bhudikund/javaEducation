@@ -10,7 +10,7 @@ public class task3 {
     public static String fillArray(int i){
         Scanner in = new Scanner(System.in);
         if ( i < arrayindex){
-            System.out.println("Введите " + i + " число: ");
+            System.out.println("Введите " + i + " индекс: ");
             array[i]= in.nextInt();
             fillArray(i + 1);
         }

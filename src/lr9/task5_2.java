@@ -1,7 +1,7 @@
 package lr9;
 
 public class task5_2 {
-    class Node {
+/*    class Node {
         public int value;
         public task5_1.Node next;
         Node(int value, task5_1.Node next){
