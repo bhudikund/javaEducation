@@ -15,7 +15,6 @@ public class SubClass extends SuperClass {
         putNumbers(number);
         //getAll(text, number);
     }
-
     public void putSubText(){
         SubText = "Пустой текст";
     }
@@ -30,7 +29,6 @@ public class SubClass extends SuperClass {
         int length = SubText.length();
         return length;
     }
-
 /*    public String getAll(String text,int number){
         int length = getLenght();
         return "Число равно: " + number + " Длинна строки: " + length;

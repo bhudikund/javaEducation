@@ -25,6 +25,4 @@ public class SubClassTask extends SuperClassTask{
         return SubText + SubWord;
     }
 
-
-
 }
