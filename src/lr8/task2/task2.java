@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class task2 {
     public static void main(String[] args) throws IOException {
-
         BufferedReader br = null;
         PrintWriter bw = null;
         Scanner in = new Scanner(System.in);
@@ -15,9 +14,7 @@ public class task2 {
             f1.createNewFile();
             File f2 = new File("G:\\MyFile2.txt");
             f2.createNewFile();
-
             bw = new PrintWriter(f1.getAbsolutePath(),"cp1251");
-
             String str;
             for (int i = 0; i < 2; i++) {
                 System.out.println("Введите текст: ");
@@ -25,13 +22,12 @@ public class task2 {
                 bw.println(str);
             }
             for (int i = 0; i < 5; i++) {
-                System.out.println("Введите double число (через ,): ");
+                System.out.println("Введите число: ");
                 double db = in.nextDouble();
                 bw.println(db);
             }
             bw.flush();
             bw.close();
-
             br = new BufferedReader(new InputStreamReader(new FileInputStream(f1.getAbsolutePath()), "cp1251"));
             bw = new PrintWriter(f2.getAbsolutePath(), "cp1251");
 
