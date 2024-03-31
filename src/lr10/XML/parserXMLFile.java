@@ -80,15 +80,7 @@ public class parserXMLFile {
                     ("G:\\Labs\\labs\\src\\lr10\\XML\\example.xml"));
             transformer.transform(source,result);
 
-            //Поиск по фамилии или должности
-            Stream<Element> Employee;
 
-
-            //Удаление элемента
-
-            System.out.print("\nЧто необходимо удалить?");
-            String delElement = in.nextLine();
-            //Element EmployeeElement = (Element) delElement;
 
 
         }catch (Exception e){

@@ -14,9 +14,9 @@ import java.util.List;
 
 public class newsParser {
     public static void main(String[] args) {
-        Node test;
-        JSONObject testt = new JSONObject();
-        Node test2;
+        Node title;
+        JSONObject news = new JSONObject();
+        Node date;
         try{
             Document doc = Jsoup.connect("http://fat.urfu.ru/").get();
             Elements newParent = doc
@@ -26,25 +26,15 @@ public class newsParser {
             for (int i = 3; i < 20; i++){
                 if (!(i % 2 == 0)){
                     List<Node> nodes= newParent.get(0).childNodes();
-                    /*System.out.println("Тема : " +
-                            ((Element) nodes.get(i))
-                                    .getElementsByClass("blocktitle")
-                                    .get(0).childNodes().get(0));*/
-                    test = ((Element) nodes.get(i))
+                    title = ((Element) nodes.get(i))
                             .getElementsByClass("blocktitle")
                             .get(0).childNodes().get(0);
-                    test2 = ((Element) nodes.get(i))
+                    date = ((Element) nodes.get(i))
                             .getElementsByClass("blockdate")
                             .get(0).childNodes().get(0);
-                    testt.put(test2.toString(),test.toString());
-                    //System.out.println(test.toString());
-                    /*System.out.println("Дата: " +
-                            ((Element) nodes.get(i))
-                                    .getElementsByClass("blockdate")
-                                    .get(0).childNodes().get(0) +
-                            "\n");*/
+                    news.put(date.toString(),title.toString());
                     try(FileWriter file = new FileWriter("G:\\Labs\\labs\\src\\lr10\\HTML\\test.json")){
-                        file.write(testt.toJSONString());
+                        file.write(news.toJSONString());
                     }catch (Exception e){
                         e.printStackTrace();
                     }

@@ -8,6 +8,7 @@ import java.io.FileWriter;
 public class createJSONFile {
 
     public static void main(String[] args) {
+
         JSONObject org = new JSONObject();
         JSONArray Employee = new JSONArray();
 
@@ -29,6 +30,7 @@ public class createJSONFile {
         try (FileWriter file = new FileWriter("G:\\Labs\\labs\\src\\lr10\\JSON\\JSON-example.json")){
             file.write(org.toJSONString());
             System.out.println("Файл успешно создан");
+
         }catch (Exception e){
             e.printStackTrace();
         }
