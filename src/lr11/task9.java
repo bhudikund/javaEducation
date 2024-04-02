@@ -18,7 +18,7 @@ public class task9 {
             System.out.println(e);
         }
 
-        List<String> stringsAfter = filterLengthOfStrings(strings);
+        List<String> stringsAfter = filterClearStrings(strings);
 
         System.out.println("\nСтрока после сравнения: "+ "\n");
         for (String f : stringsAfter){
@@ -26,7 +26,7 @@ public class task9 {
         }
     }
 
-    public static List<String> filterLengthOfStrings(List<String> list){
+    public static List<String> filterClearStrings(List<String> list){
         return list.stream()
                 .filter(s -> s.matches("[а-яА-Я]+"))
                 .collect(Collectors.toList());
