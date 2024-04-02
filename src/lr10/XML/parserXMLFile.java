@@ -44,9 +44,6 @@ public class parserXMLFile {
                             + element.getElementsByTagName("salary").item(0)
                             .getTextContent());
                 }
-
-
-
             }
             //Дополнение xml файла
             System.out.print("\nВведите новую фамилию: ");
@@ -79,9 +76,6 @@ public class parserXMLFile {
             StreamResult result = new StreamResult(new File
                     ("G:\\Labs\\labs\\src\\lr10\\XML\\example.xml"));
             transformer.transform(source,result);
-
-
-
 
         }catch (Exception e){
             e.printStackTrace();
