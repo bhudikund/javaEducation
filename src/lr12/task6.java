@@ -29,15 +29,10 @@ public class task6 {
     public static Runnable findMaxNumber = new Runnable() {
         @Override
         public void run() {
-
                 sum += arrayList.get(indexThread);
                 if(indexThread < arrayList.size()){
                     indexThread++;
-                }else {
-                }
-
-
-
+                }else {}
         }
 
     };
