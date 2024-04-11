@@ -26,16 +26,12 @@ public class task1 {
 
         int[] arr = new int[n];
 
-
         for (int i = 0; i< n; i++){
             arr[i] = random.nextInt();
         }
 
         System.out.println("Массив до фильтрации: " + Arrays.toString(arr));
-
         System.out.println("Массив после фильтрации: " + Arrays.toString(filterEvenArray(arr)));
-
-
     }
 
     public static ArrayList<Integer> getEvenNumbers(ArrayList<Integer> array){
