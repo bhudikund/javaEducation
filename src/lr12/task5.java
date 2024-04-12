@@ -14,7 +14,6 @@ public class task5 {
     public static void main(String[] args) throws InterruptedException {
         Random random = new Random();
 
-
         for(int i = 0; i < Runtime.getRuntime().availableProcessors();i++){
             arrayList.add(random.nextInt(100));
         }
@@ -36,14 +35,12 @@ public class task5 {
                 maxNumber = arrayList.get(indexThread);
                 if(indexThread < arrayList.size()){
                     indexThread++;
-                }else{
-                }
+                }else{}
 
             }else{
                 if(indexThread < arrayList.size()){
                 indexThread++;
-            }else{
-            }
+            }else{}
             }
         }
 

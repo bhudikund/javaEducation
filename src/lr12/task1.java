@@ -13,7 +13,6 @@ public class task1 {
                    e.printStackTrace();
                }
            }
-
         });
 
         Thread t2 = new Thread(() -> {
@@ -25,7 +24,6 @@ public class task1 {
                     e.printStackTrace();
                 }
             }
-
         });
 
         t1.start();

@@ -2,7 +2,7 @@ package timus2sem;
 
 import java.util.Scanner;
 
-public class task_2142 {
+public class task_2142___ {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         long lands[] = new long[3];
