@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Scanner;
 
 public class task8 {
-    static class Node{
+     static class Node{
         int value;
         Node next;
         Node(int value, Node next){
@@ -19,11 +19,9 @@ public class task8 {
                 this.next= null;
             }
 
-
         static class Cycle {
             public Node head;
             public Rec headR;
-
 
             public Node CreateHead() {
                 head = null;
@@ -32,7 +30,6 @@ public class task8 {
                 }
                 return head;
             }
-
 
             public Node CreateTail() {
                 head = null;
@@ -58,7 +55,7 @@ public class task8 {
             }
 
             public Node inputAnyWhere(int value, int counter){
-                Node newNode=new Node(44, null);
+                Node newNode= new Node(44, null);
                 Node ref = head;
 
                 int k=1;

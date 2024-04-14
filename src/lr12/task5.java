@@ -1,7 +1,5 @@
 package lr12;
 
-import org.apache.poi.ss.formula.functions.T;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -24,7 +22,6 @@ public class task5 {
             threads[i].start();
             threads[i].join();
         }
-
         System.out.println(arrayList + "" + "\nmax: " + maxNumber);
     }
 
@@ -35,12 +32,11 @@ public class task5 {
                 maxNumber = arrayList.get(indexThread);
                 if(indexThread < arrayList.size()){
                     indexThread++;
-                }else{}
-
+                }
             }else{
                 if(indexThread < arrayList.size()){
                 indexThread++;
-            }else{}
+            }
             }
         }
 

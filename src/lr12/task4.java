@@ -10,7 +10,6 @@ public class task4 {
         }
     }
 
-
     public static Runnable getNameFromThread = new Runnable() {
         @Override
         public void run() {
